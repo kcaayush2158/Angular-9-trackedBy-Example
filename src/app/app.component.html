@@ -1,0 +1,13 @@
+<H1>wELCOME TO {{title}}</H1>
+<table>
+<tr *ngFor="let s of students;let i =index;trackBy:trackBystudentId">
+  <td>{{i+1}}</td>
+  <td>{{s.studentid}}</td>
+  <td>{{s.name}}</td>
+  <td>{{s.age}}</td>
+  <td>{{s.gender}}</td>
+  <td>{{s.course}}</td>
+</tr>
+</table>
+<button (click)="getmorestudents()">Get more styudents</button>
+<router-outlet></router-outlet>
